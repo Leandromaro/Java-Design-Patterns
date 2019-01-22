@@ -11,18 +11,15 @@ class EarlyInstantiationSingleton
      */
     private static EarlyInstantiationSingleton instance = new EarlyInstantiationSingleton();
 
-    private EarlyInstantiationSingleton()
-    {
+    private EarlyInstantiationSingleton(){
         System.out.println("EarlyInstantiationSingleton(): Initializing Instance");
     }
 
-    public static EarlyInstantiationSingleton getInstance()
-    {
+    public static EarlyInstantiationSingleton getInstance(){
         return instance;
     }
 
-    public void doSomething()
-    {
+    public void doSomething(){
         System.out.println("doSomething(): EarlyInstantiationSingleton does something!");
     }
 }
