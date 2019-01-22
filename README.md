@@ -1,4 +1,4 @@
-#Creational Design Patterns
+# Creational Design Patterns
 
 Creational design patterns provide solution to __instantiate__ a object in the best possible way for specific situations
 
@@ -9,3 +9,8 @@ Singleton pattern restricts the instantiation of a class and ensures that only o
   - Private constructor to restrict instantiation of the class from other classes.
   - Private static variable of the same class that is the only instance of the class.
   - Public static method that returns the instance of the class, this is the global access point for outer world to get the     instance of the singleton class.
+
+
+
+
+This guide has taken some examples from [Journaldev](https://www.journaldev.com/1827/java-design-patterns-example-tutorial#singleton-pattern).
