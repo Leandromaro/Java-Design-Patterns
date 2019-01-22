@@ -1,4 +1,4 @@
-package com.company;
+package regularFactory;
 
 public class TestClientFactory {
     public static void main(String[] args) {

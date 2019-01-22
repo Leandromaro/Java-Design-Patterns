@@ -1,3 +1,5 @@
+package suplierFactory;
+
 import java.util.function.Supplier;
 
 public class Main {
@@ -6,7 +8,7 @@ public class Main {
         Supplier<ShapeFactory> shapeFactory =  ShapeFactory::new;
         //call draw method of circle
         shapeFactory.get().getShape("circle").draw();
-        //call draw method of Rectangle
+        //call draw method of suplierFactory.Rectangle
         shapeFactory.get().getShape("rectangle").draw();
     }
 }

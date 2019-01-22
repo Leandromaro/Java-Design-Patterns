@@ -1,4 +1,4 @@
-package com.company;
+package regularFactory;
 
 abstract class Product {
     public void writeName(String name) {

@@ -1,3 +1,3 @@
-package com.company;
+package regularFactory;
 
 public class ProductA extends Product { }

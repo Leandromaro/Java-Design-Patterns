@@ -1,4 +1,4 @@
-package com.company;
+package regularFactory;
 
 class ProductFactory {
     Product createProduct(String type) {

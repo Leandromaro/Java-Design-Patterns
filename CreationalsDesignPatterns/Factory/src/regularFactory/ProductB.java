@@ -1,4 +1,4 @@
-package com.company;
+package regularFactory;
 
 public class ProductB extends Product {
     public void writeName(String name) {
