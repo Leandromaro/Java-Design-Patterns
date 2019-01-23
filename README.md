@@ -56,12 +56,9 @@ Builder pattern solves the issue with large number of optional parameters and in
 
 ## References
 This guide has taken some examples from: 
-
-```
-- [Journaldev](https://www.journaldev.com/1827/java-design-patterns-example-tutorial#singleton-pattern).
-- [Dzone](https://dzone.com/articles/design-patterns-the-builder-pattern).
-- [Baeldung](https://www.baeldung.com/java-abstract-factory-pattern).
-```
+  - [Journaldev](https://www.journaldev.com/1827/java-design-patterns-example-tutorial#singleton-pattern).
+  - [Dzone](https://dzone.com/articles/design-patterns-the-builder-pattern).
+  - [Baeldung](https://www.baeldung.com/java-abstract-factory-pattern).
 
 
 
