@@ -6,8 +6,6 @@ Some of the benefits of using design patterns are:
 2. Using design patterns promotes reusability that leads to more robust and highly maintainable code.
 3. Since design patterns are already defined, it makes our code easy to understand and debug. It leads to faster development and new members of team understand it easily.
 
-
-#### Index
 ## Table of Contents
   - [Creational Design Patterns](#creational)
     - [Singleton](#singleton)
