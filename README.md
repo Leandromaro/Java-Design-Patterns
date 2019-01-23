@@ -10,6 +10,7 @@ Some of the benefits of using design patterns are:
 #### Index
 
 1. [Singleton](##Singleton)
+2. [Factory](##Factory)
 
 
 # Creational Design Patterns
@@ -17,7 +18,7 @@ Some of the benefits of using design patterns are:
 Creational design patterns provide solution to __instantiate__ a object in the best possible way for specific situations
 
 ## Singleton
-__ Singleton pattern restricts the instantiation of a class and ensures that only one instance of the class exists in the java virtual machine__. It seems to be a very simple design pattern but when it comes to implementation, it comes with a lot of implementation concerns. The implementation of Singleton pattern has always been a controversial topic among developers and it's also considered as an anti-pattern.
+__Singleton pattern restricts the instantiation of a class and ensures that only one instance of the class exists in the java virtual machine__. It seems to be a very simple design pattern but when it comes to implementation, it comes with a lot of implementation concerns. The implementation of Singleton pattern has always been a controversial topic among developers and it's also considered as an anti-pattern.
 
 #### To implement a Singleton pattern, we have different approaches but all of them have the following common concepts.
   - Private constructor to restrict instantiation of the class from other classes.
