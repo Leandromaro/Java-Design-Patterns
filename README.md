@@ -54,19 +54,15 @@ Abstract Factory pattern is similar to Factory pattern and it’s factory of fac
 ## Builder
 Builder pattern solves the issue with large number of optional parameters and inconsistent state by providing a way to build the object step-by-step and provide a method that will actually return the final Object.
 
-#### Diff or Patch of Pull Request
-You can get the diff of a Pull Request by adding a `.diff` or `.patch`
-extension to the end of the URL. For example:
-
-```
-https://github.com/tiimgreen/github-cheat-sheet/pull/15
-https://github.com/tiimgreen/github-cheat-sheet/pull/15.diff
-https://github.com/tiimgreen/github-cheat-sheet/pull/15.patch
-```
-
+## References
 This guide has taken some examples from: 
+
+```
 - [Journaldev](https://www.journaldev.com/1827/java-design-patterns-example-tutorial#singleton-pattern).
 - [Dzone](https://dzone.com/articles/design-patterns-the-builder-pattern).
 - [Baeldung](https://www.baeldung.com/java-abstract-factory-pattern).
+```
+
+
 
 
