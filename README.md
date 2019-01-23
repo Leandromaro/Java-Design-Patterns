@@ -6,13 +6,12 @@ Some of the benefits of using design patterns are:
 2. Using design patterns promotes reusability that leads to more robust and highly maintainable code.
 3. Since design patterns are already defined, it makes our code easy to understand and debug. It leads to faster development and new members of team understand it easily.
 
-
-#### Index
 ## Table of Contents
   - [Creational Design Patterns](#creational)
     - [Singleton](#singleton)
-    - [Factory](#factory)
-    - [Abstract Factory Pattern](#abstract)
+    - [Factory](#factory-pattern)
+    - [Abstract Factory Pattern](#abstract-factory-pattern)
+    - [Builder](#builder)
 
 
 # Creational Design Patterns
@@ -42,6 +41,26 @@ java.util.Calendar, ResourceBundle and NumberFormat getInstance() methods uses F
 valueOf() method in wrapper classes like Boolean, Integer etc.
 
 ## Abstract Factory Pattern
-Abstract Factory pattern is similar to Factory pattern and it’s factory of factories.
+Abstract Factory pattern is similar to Factory pattern and it’s factory of factories. This model allows us to create objects that follow a general pattern.
 
-This guide has taken some examples from [Journaldev](https://www.journaldev.com/1827/java-design-patterns-example-tutorial#singleton-pattern).
+### When to Use Abstract Factory Pattern:
+
+ - The client is independent of how we create and compose the objects in the system
+ - The system consists of multiple families of objects, and these families are designed to be used together
+ - We need a run-time value to construct a particular dependency
+
+## Builder
+Builder pattern solves the issue with large number of optional parameters and inconsistent state by providing a way to build the object step-by-step and provide a method that will actually return the final Object. It allows us to write readable, understandable code to set up complex objects.
+
+*The Builder pattern is a good choice when designing classes whose constructos or static factories would have more than a handful of parameters, especially if many of the parameter are optional or of identical type* [Joshua Bloch](https://github.com/jbloch).
+
+
+## References
+This guide has taken some examples from: 
+  - [Journaldev](https://www.journaldev.com/1827/java-design-patterns-example-tutorial#singleton-pattern).
+  - [Dzone](https://dzone.com/articles/design-patterns-the-builder-pattern).
+  - [Baeldung](https://www.baeldung.com/java-abstract-factory-pattern).
+
+
+
+
