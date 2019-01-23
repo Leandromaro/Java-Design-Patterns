@@ -8,8 +8,8 @@ Some of the benefits of using design patterns are:
 
 
 #### Index
-
-1. [Singleton](##Singleton)
+- [GitHub](#github)
+1. [Singleton](##singleton)
 2. [Factory](##Factory)
 
 
@@ -18,7 +18,7 @@ Some of the benefits of using design patterns are:
 Creational design patterns provide solution to __instantiate__ a object in the best possible way for specific situations
 
 ## Singleton
-__##Singleton pattern restricts the instantiation of a class and ensures that only one instance of the class exists in the java virtual machine__. It seems to be a very simple design pattern but when it comes to implementation, it comes with a lot of implementation concerns. The implementation of Singleton pattern has always been a controversial topic among developers and it's also considered as an anti-pattern.
+__Singleton pattern restricts the instantiation of a class and ensures that only one instance of the class exists in the java virtual machine__. It seems to be a very simple design pattern but when it comes to implementation, it comes with a lot of implementation concerns. The implementation of Singleton pattern has always been a controversial topic among developers and it's also considered as an anti-pattern.
 
 #### To implement a Singleton pattern, we have different approaches but all of them have the following common concepts.
   - Private constructor to restrict instantiation of the class from other classes.
@@ -27,7 +27,7 @@ __##Singleton pattern restricts the instantiation of a class and ensures that on
 
 ## Factory Pattern
 
-##Factory design pattern __is used when we have a super class with multiple sub-classes and based on input, we need to return one of the sub-class__. This pattern take out the responsibility of instantiation of a class from client program to the factory class. We can apply Singleton pattern on Factory class or make the factory method static.
+Factory design pattern __is used when we have a super class with multiple sub-classes and based on input, we need to return one of the sub-class__. This pattern take out the responsibility of instantiation of a class from client program to the factory class. We can apply Singleton pattern on Factory class or make the factory method static.
 
 ### Factory Design Pattern Advantages
 
