@@ -51,3 +51,6 @@ Abstract Factory pattern is similar to Factory pattern and it’s factory of fac
  - We need a run-time value to construct a particular dependency
 
 This guide has taken some examples from [Journaldev](https://www.journaldev.com/1827/java-design-patterns-example-tutorial#singleton-pattern).
+
+## Builder
+Builder pattern solves the issue with large number of optional parameters and inconsistent state by providing a way to build the object step-by-step and provide a method that will actually return the final Object.
