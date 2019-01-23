@@ -13,6 +13,7 @@ Some of the benefits of using design patterns are:
     - [Singleton](#singleton)
     - [Factory](#factory-pattern)
     - [Abstract Factory Pattern](#abstract-factory-pattern)
+    - [Builder](#builder)
 
 
 # Creational Design Patterns
@@ -50,7 +51,12 @@ Abstract Factory pattern is similar to Factory pattern and it’s factory of fac
  - The system consists of multiple families of objects, and these families are designed to be used together
  - We need a run-time value to construct a particular dependency
 
-This guide has taken some examples from [Journaldev](https://www.journaldev.com/1827/java-design-patterns-example-tutorial#singleton-pattern).
-
 ## Builder
 Builder pattern solves the issue with large number of optional parameters and inconsistent state by providing a way to build the object step-by-step and provide a method that will actually return the final Object.
+
+This guide has taken some examples from: 
+- [Journaldev](https://www.journaldev.com/1827/java-design-patterns-example-tutorial#singleton-pattern).
+- [Dzone](https://dzone.com/articles/design-patterns-the-builder-pattern).
+- [Baeldung](https://www.baeldung.com/java-abstract-factory-pattern).
+
+
