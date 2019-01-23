@@ -12,6 +12,7 @@ Some of the benefits of using design patterns are:
   - [Creational Design Patterns](#creational)
     - [Singleton](#singleton)
     - [Factory](#Factory)
+    - [Abstract] (#Abstract Factory Pattern)
 
 
 # Creational Design Patterns
@@ -41,5 +42,7 @@ Factory design pattern __is used when we have a super class with multiple sub-cl
 java.util.Calendar, ResourceBundle and NumberFormat getInstance() methods uses Factory pattern.
 valueOf() method in wrapper classes like Boolean, Integer etc.
 
+## Abstract Factory Pattern
+Abstract Factory pattern is similar to Factory pattern and it’s factory of factories.
 
 This guide has taken some examples from [Journaldev](https://www.journaldev.com/1827/java-design-patterns-example-tutorial#singleton-pattern).
