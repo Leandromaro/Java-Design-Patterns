@@ -1,4 +1,4 @@
-package regularFactory;
+package Factory.src.regularFactory;
 
 public class ProductB extends Product {
     public void writeName(String name) {

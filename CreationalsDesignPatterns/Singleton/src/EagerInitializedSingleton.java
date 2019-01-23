@@ -1,4 +1,4 @@
-package Singleton;
+package Singleton.src;
 
 //Early instantiation using implementation with static field.
 class EagerInitializedSingleton

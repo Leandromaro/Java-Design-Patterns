@@ -1,4 +1,4 @@
-package Singleton;
+package Singleton.src;
 
 //Lazy instantiation using double locking mechanism.
 public class ThreadSafeSingleton {

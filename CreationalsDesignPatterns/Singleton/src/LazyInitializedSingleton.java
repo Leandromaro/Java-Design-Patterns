@@ -1,4 +1,4 @@
-package Singleton;
+package Singleton.src;
 
 public class LazyInitializedSingleton {
 

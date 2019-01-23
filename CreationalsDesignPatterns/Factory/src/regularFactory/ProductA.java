@@ -1,3 +1,3 @@
-package regularFactory;
+package Factory.src.regularFactory;
 
 public class ProductA extends Product { }

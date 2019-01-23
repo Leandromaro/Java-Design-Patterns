@@ -1,4 +1,4 @@
-package regularFactory;
+package Factory.src.regularFactory;
 
 abstract class Product {
     public void writeName(String name) {

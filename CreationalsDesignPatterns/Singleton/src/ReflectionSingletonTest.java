@@ -1,4 +1,4 @@
-package Singleton;
+package Singleton.src;
 
 import java.lang.reflect.Constructor;
 /*
