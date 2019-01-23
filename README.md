@@ -8,9 +8,8 @@ Some of the benefits of using design patterns are:
 
 
 #### Index
-- [GitHub](#github)
-1. [Singleton](##singleton)
-2. [Factory](##Factory)
+1. [Singleton](#singleton)
+2. [Factory](#Factory)
 
 
 # Creational Design Patterns
