@@ -12,7 +12,7 @@ Some of the benefits of using design patterns are:
   - [Creational Design Patterns](#creational)
     - [Singleton](#singleton)
     - [Factory](#Factory)
-    - [Abstract](#Abstract Factory Pattern)
+    - [Abstract Factory Pattern](#Abstract)
 
 
 # Creational Design Patterns
