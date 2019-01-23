@@ -11,8 +11,8 @@ Some of the benefits of using design patterns are:
 ## Table of Contents
   - [Creational Design Patterns](#creational)
     - [Singleton](#singleton)
-    - [Factory](#factory)
-    - [Abstract Factory Pattern](#abstract)
+    - [Factory](##factory-pattern)
+    - [Abstract Factory Pattern](#abstract-factory-pattern)
 
 
 # Creational Design Patterns
@@ -42,7 +42,7 @@ java.util.Calendar, ResourceBundle and NumberFormat getInstance() methods uses F
 valueOf() method in wrapper classes like Boolean, Integer etc.
 
 ## Abstract Factory Pattern
-Abstract Factory pattern is similar to Factory pattern and it’s factory of factories.
+Abstract Factory pattern is similar to Factory pattern and it’s factory of factories. This model allows us to create objects that follow a general pattern.
 
 ### When to Use Abstract Factory Pattern:
 
