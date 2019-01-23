@@ -15,8 +15,10 @@ public class ShapeFactory {
         map.put("RECTANGLE", Rectangle::new);
     }
     Shape getShape(String shapeType){
+        // indexing the map will return the supplier
         Supplier<Shape> shape = map.get(shapeType.toUpperCase());
         if(shape != null) {
+            // doing get to the supplier we obtain the object created
             return shape.get();
         }
         throw new IllegalArgumentException("No such shape " + shapeType.toUpperCase());
