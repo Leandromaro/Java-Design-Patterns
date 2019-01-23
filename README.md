@@ -11,7 +11,7 @@ Some of the benefits of using design patterns are:
 ## Table of Contents
   - [Creational Design Patterns](#creational)
     - [Singleton](#singleton)
-    - [Factory](#Factory Pattern)
+    - [Factory](#factory)
     - [Abstract Factory Pattern](#Abstract Factory Pattern)
 
 
