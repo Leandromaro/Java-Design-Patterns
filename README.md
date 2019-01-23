@@ -8,8 +8,10 @@ Some of the benefits of using design patterns are:
 
 
 #### Index
-1. [Singleton](#singleton)
-2. [Factory](#Factory)
+## Table of Contents
+  - [Creational Design Patterns](#creational)
+    - [Singleton](#singleton)
+    - [Factory](#Factory)
 
 
 # Creational Design Patterns
