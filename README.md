@@ -44,4 +44,10 @@ valueOf() method in wrapper classes like Boolean, Integer etc.
 ## Abstract Factory Pattern
 Abstract Factory pattern is similar to Factory pattern and it’s factory of factories.
 
+### When to Use Abstract Factory Pattern:
+
+ - The client is independent of how we create and compose the objects in the system
+ - The system consists of multiple families of objects, and these families are designed to be used together
+ - We need a run-time value to construct a particular dependency
+
 This guide has taken some examples from [Journaldev](https://www.journaldev.com/1827/java-design-patterns-example-tutorial#singleton-pattern).
