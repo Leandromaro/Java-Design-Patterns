@@ -52,7 +52,7 @@ Abstract Factory pattern is similar to Factory pattern and it’s factory of fac
 ## Builder
 Builder pattern solves the issue with large number of optional parameters and inconsistent state by providing a way to build the object step-by-step and provide a method that will actually return the final Object. It allows us to write readable, understandable code to set up complex objects.
 
-*The Builder pattern is a good choice when designing classes whose constructos or static factories would have more than a handful of parameters, especially if many of the parameter are optional or of identical type* [Joshua Bloch](https://github.com/jbloch).
+*The Builder pattern is a good choice when designing classes whose constructors or static factories would have more than a handful of parameters, especially if many of the parameter are optional or of identical type* [Joshua Bloch](https://github.com/jbloch).
 
 
 ## References
