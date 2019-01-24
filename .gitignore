@@ -1,1 +1,4 @@
 .idea/
+.filename.ser
+.out/
+.patterns.iml
