@@ -54,6 +54,12 @@ Builder pattern solves the issue with large number of optional parameters and in
 
 *The Builder pattern is a good choice when designing classes whose constructors or static factories would have more than a handful of parameters, especially if many of the parameter are optional or of identical type* [Joshua Bloch](https://github.com/jbloch).
 
+## Protoype
+Prototype pattern is used when the Object creation is a costly affair and requires a lot of time and resources and you have a similar object already existing. __So this pattern provides a mechanism to copy the original object to a new object and then modify it according to our needs__. This pattern uses __java cloning__ to copy the object.
+
+### When to Use Prototype Design Pattern Example
+
+It would be easy to understand prototype design pattern with an example. Suppose we have an Object that loads data from database. Now we need to modify this data in our program multiple times, __so it’s not a good idea to create the Object using new keyword and load all the data again from database.The better approach would be to clone the existing object into a new object and then do the data manipulation__.
 
 ## References
 This guide has taken some examples from: 
