@@ -12,6 +12,7 @@ Some of the benefits of using design patterns are:
     - [Factory](#factory-pattern)
     - [Abstract Factory Pattern](#abstract-factory-pattern)
     - [Builder](#builder)
+    - [Prototype](#prototype)
 
 
 # Creational Design Patterns
@@ -54,7 +55,7 @@ Builder pattern solves the issue with large number of optional parameters and in
 
 *The Builder pattern is a good choice when designing classes whose constructors or static factories would have more than a handful of parameters, especially if many of the parameter are optional or of identical type* [Joshua Bloch](https://github.com/jbloch).
 
-## Protoype
+## Prototype
 Prototype pattern is used when the Object creation is a costly affair and requires a lot of time and resources and you have a similar object already existing. __So this pattern provides a mechanism to copy the original object to a new object and then modify it according to our needs__. This pattern uses __java cloning__ to copy the object.
 
 ### When to Use Prototype Design Pattern
