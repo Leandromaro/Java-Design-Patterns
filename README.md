@@ -94,8 +94,8 @@ Composite pattern is one of the Structural design pattern and is used when we ha
 ### Where to use
 Use the Composite pattern when
 
- - you want to represent part-whole hierarchies of objects
- - you want clients to be able to ignore the difference between compositions of objects and individual objects. Clients will treat all objects in the composite structure uniformly
+ - When you want to represent part-whole hierarchies of objects
+ - When you want clients to be able to ignore the difference between compositions of objects and individual objects. Clients will treat all objects in the composite structure uniformly
 
 ## References
 This guide has taken some examples from: 
