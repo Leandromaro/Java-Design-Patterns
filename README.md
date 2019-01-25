@@ -81,9 +81,9 @@ While implementing Adapter pattern, there are two approaches (class adapter and 
  - Object Adapter – This form uses Java Composition and adapter contains the source object.
 
 ### Where to use
-•When you want to use an existing class, and its interface does not match the one you need.
-•When you want to create a reusable class that cooperates with unrelated or unforeseen classes, that is, classes that don't necessarily have compatible interfaces.
-•When you want to increase transparency of classes. •When you want to make a pluggable kit.
+• When you want to use an existing class, and its interface does not match the one you need.
+• When you want to create a reusable class that cooperates with unrelated or unforeseen classes, that is, classes that don't necessarily have compatible interfaces.
+• When you want to increase transparency of classes. •When you want to make a pluggable kit.
 
 ## References
 This guide has taken some examples from: 
