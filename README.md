@@ -19,6 +19,7 @@ Some of the benefits of using design patterns are:
     - [Flyweight](#flyweight-pattern)
     - [Facade](#facade)
     - [Bridge](#bridge)
+    - [Proxy](#proxy)
 
 
 # Creational Design Patterns
@@ -142,6 +143,14 @@ The implementation of bridge design pattern follows the notion to prefer Composi
 
 ### Where to use
 Bridge design pattern can be used when both abstraction and implementation can have different hierarchies independently and we want to hide the implementation from the client application.
+
+## Proxy
+
+Proxy pattern intent is to “Provide a surrogate or placeholder for another object to control access to it”. The definition itself is very clear and proxy pattern is used when we want to provide controlled access of a functionality.
+
+### Where to use
+Proxy design pattern common uses are to control access or to provide a wrapper implementation for better performance.
+Java RMI package uses proxy pattern. That’s all for proxy design pattern in java.
 
 ## References
 This guide has taken some examples from: 
