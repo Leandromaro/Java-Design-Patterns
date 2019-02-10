@@ -17,7 +17,7 @@ Some of the benefits of using design patterns are:
     - [Adapter](#adapter-pattern)
     - [Composite](#composite)
     - [Flyweight](#flyweight-pattern)
- 
+    - [Facade](#facade)
 
 
 # Creational Design Patterns
@@ -110,6 +110,12 @@ The flyweight object’s state is made up of an invariant component shared with 
   - The object properties can be divided into intrinsic and extrinsic properties, extrinsic properties of an Object should be defined by the client program.
 
 __It’s very important that the flyweight objects are immutable: any operation on the state must be performed by the factory.__
+
+
+## Facade
+According to GoF Facade design pattern is:
+
+> Provide a unified interface to a set of interfaces in a subsystem. Facade Pattern defines a higher-level interface that makes the subsystem easier to use.
 
 ## References
 This guide has taken some examples from: 
