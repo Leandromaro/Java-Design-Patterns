@@ -117,6 +117,12 @@ According to GoF Facade design pattern is:
 
 > Provide a unified interface to a set of interfaces in a subsystem. Facade Pattern defines a higher-level interface that makes the subsystem easier to use.
 
+__A facade encapsulates a complex subsystem behind a simple interface__. It hides much of the complexity and makes the subsystem easy to use.
+
+Also, if we need to use the complex subsystem directly, we still can do that; we aren’t forced to use the facade all the time.
+
+Besides a much simpler interface, there’s one more benefit of using this design pattern. __It decouples a client implementation from the complex subsystem__. Thanks to this, we can make changes to the existing subsystem and don’t affect a client.
+
 ## References
 This guide has taken some examples from: 
   - [Journaldev](https://www.journaldev.com/1827/java-design-patterns-example-tutorial).
