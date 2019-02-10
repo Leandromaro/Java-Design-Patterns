@@ -123,6 +123,13 @@ Also, if we need to use the complex subsystem directly, we still can do that; we
 
 Besides a much simpler interface, there’s one more benefit of using this design pattern. __It decouples a client implementation from the complex subsystem__. Thanks to this, we can make changes to the existing subsystem and don’t affect a client.
 
+### Where to use
+ - Facade design pattern is more like a helper for client applications, it doesn’t hide subsystem interfaces from the client. Whether to use Facade or not is completely dependent on client code.
+ - Facade design pattern can be applied at any point of development, usually when the number of interfaces grow and system gets complex.
+ - Subsystem interfaces are not aware of Facade and they shouldn’t have any reference of the Facade interface.
+ - Facade design pattern should be applied for similar kind of interfaces, its purpose is to provide a single interface rather than multiple interfaces that does the similar kind of jobs.
+ - We can use Factory pattern with Facade to provide better interface to client systems.
+
 ## References
 This guide has taken some examples from: 
   - [Journaldev](https://www.journaldev.com/1827/java-design-patterns-example-tutorial).
