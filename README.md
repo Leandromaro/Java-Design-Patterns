@@ -93,8 +93,8 @@ While implementing Adapter pattern, there are two approaches (class adapter and 
 The Java API uses the Adapter pattern, WindowAdapter, ComponentAdapter, ContainerAdapter, FocusAdapter, KeyAdapter, MouseAdapter, MouseMotionAdapter.
 
 ## Composite
-
-Composite design patten allows you to have a tree structure and ask each node in the tree structure to perform a task.You can take real life example of a organization. It have general managers and under general managers, there can be managers and  under managers there can be developers.
+The Composite pattern helps you to create tree structures of objects without the need to force clients to differentiate between branches and leaves regarding usage
+Composite design patten allows you to have a tree structure and ask each node in the tree structure to perform a task. You can take real life example of a organization. It have general managers and under general managers, there can be managers and  under managers there can be developers.
 
 As described by Gof:
 
