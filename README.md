@@ -98,7 +98,7 @@ Composite design patten allows you to have a tree structure and ask each node in
 
 As described by Gof:
 
-> Compose objects into tree structure to represent part-whole hierarchies.Composite lets client treat individual objects and compositions of objects uniformly.
+> Compose objects into tree structure to represent part-whole hierarchies. __Composite lets client treat individual objects and compositions of objects uniformly__.
 
 ### Where to use
 Use the Composite pattern when
