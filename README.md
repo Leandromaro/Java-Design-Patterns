@@ -16,6 +16,7 @@ Some of the benefits of using design patterns are:
   - [Structural Design Patterns](#Structural-Design-Patterns)
     - [Adapter](#adapter-pattern)
     - [Composite](#composite)
+    - [Flyweight](#flyweight-pattern)
  
 
 
@@ -88,14 +89,27 @@ While implementing Adapter pattern, there are two approaches (class adapter and 
 ### Usage example
 The Java API uses the Adapter pattern, WindowAdapter, ComponentAdapter, ContainerAdapter, FocusAdapter, KeyAdapter, MouseAdapter, MouseMotionAdapter.
 
-# Composite
+## Composite
 Composite pattern is one of the Structural design pattern and is used when we have to represent a part-whole hierarchy. When we need to create a structure in a way that the objects in the structure has to be treated the same way, we can apply composite design pattern.
 
 ### Where to use
 Use the Composite pattern when
 
- - you want to represent part-whole hierarchies of objects
- - you want clients to be able to ignore the difference between compositions of objects and individual objects. Clients will treat all objects in the composite structure uniformly
+ - When you want to represent part-whole hierarchies of objects
+ - When you want clients to be able to ignore the difference between compositions of objects and individual objects. Clients will treat all objects in the composite structure uniformly.
+## Flyweight Pattern
+This pattern is used to reduce the memory footprint. It can also improve performance in applications where object instantiation is expensive.
+
+Simply put, the flyweight pattern is based on a factory which recycles created objects by storing them after creation. Each time an object is requested, the factory looks up the object in order to check if it’s already been created. If it has, the existing object is returned – otherwise, a new one is created, stored and then returned.
+
+The flyweight object’s state is made up of an invariant component shared with other similar objects (intrinsic) and a variant component which can be manipulated by the client code (extrinsic).
+
+### When to use
+  - The number of Objects to be created by application should be huge.
+  - The object creation is heavy on memory and it can be time consuming too.
+  - The object properties can be divided into intrinsic and extrinsic properties, extrinsic properties of an Object should be defined by the client program.
+
+__It’s very important that the flyweight objects are immutable: any operation on the state must be performed by the factory.__
 
 ## References
 This guide has taken some examples from: 
