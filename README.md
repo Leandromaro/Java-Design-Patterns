@@ -145,8 +145,11 @@ The implementation of bridge design pattern follows the notion to prefer Composi
 Bridge design pattern can be used when both abstraction and implementation can have different hierarchies independently and we want to hide the implementation from the client application.
 
 ## Proxy
+According to GoF Proxy design pattern is:
 
-Proxy pattern intent is to “Provide a surrogate or placeholder for another object to control access to it”. The definition itself is very clear and proxy pattern is used when we want to provide controlled access of a functionality.
+>Provide a surrogate or placeholder for another object to control access to it. 
+
+The definition itself is very clear and proxy pattern is used when we want to provide controlled access of a functionality.
 
 ### Where to use
 Proxy design pattern common uses are to control access or to provide a wrapper implementation for better performance.
