@@ -18,6 +18,7 @@ Some of the benefits of using design patterns are:
     - [Composite](#composite)
     - [Flyweight](#flyweight-pattern)
     - [Facade](#facade)
+    - [Bridge](#bridge)
 
 
 # Creational Design Patterns
@@ -130,12 +131,20 @@ Besides a much simpler interface, there’s one more benefit of using this desig
  - Facade design pattern should be applied for similar kind of interfaces, its purpose is to provide a single interface rather than multiple interfaces that does the similar kind of jobs.
  - We can use Factory pattern with Facade to provide better interface to client systems.
 
+## Bridge
+Bridge design pattern is used to decouple the interfaces from implementation and hiding the implementation details from the client programs.
+
+According to GoF bridge design pattern is:
+
+> Decouple an abstraction from its implementation so that the two can vary independently
+
+The implementation of bridge design pattern follows the notion to prefer Composition over inheritance.
+
+### Where to use
+Bridge design pattern can be used when both abstraction and implementation can have different hierarchies independently and we want to hide the implementation from the client application.
+
 ## References
 This guide has taken some examples from: 
   - [Journaldev](https://www.journaldev.com/1827/java-design-patterns-example-tutorial).
   - [Dzone](https://dzone.com/articles/design-patterns-the-builder-pattern).
   - [Baeldung](https://www.baeldung.com/java-abstract-factory-pattern).
-
-
-
-
