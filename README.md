@@ -104,6 +104,11 @@ Simply put, the flyweight pattern is based on a factory which recycles created o
 
 The flyweight object’s state is made up of an invariant component shared with other similar objects (intrinsic) and a variant component which can be manipulated by the client code (extrinsic).
 
+### When to use
+  - The number of Objects to be created by application should be huge.
+  - The object creation is heavy on memory and it can be time consuming too.
+  - The object properties can be divided into intrinsic and extrinsic properties, extrinsic properties of an Object should be defined by the client program.
+
 __It’s very important that the flyweight objects are immutable: any operation on the state must be performed by the factory.__
 
 ## References
