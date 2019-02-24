@@ -146,10 +146,17 @@ According to GoF bridge design pattern is:
 
 > Decouple an abstraction from its implementation so that the two can vary independently
 
+When there are inheritance hierarchies in both interface and implementation then you loose coupling because of interdependence. In other words, Decoupling interface from implementation and hiding implementation detail of abstraction from client is main objectives of bridge design pattern.
+
 The implementation of bridge design pattern follows the notion to prefer Composition over inheritance.
 
 ### Where to use
-Bridge design pattern can be used when both abstraction and implementation can have different hierarchies independently and we want to hide the implementation from the client application.
+ - Bridge design pattern can be used when both abstraction and implementation can have different hierarchies independently and we want to hide the implementation from the client application.
+ - Abstraction and implementation should be bound at compile time.
+ - Both abstraction and implementation can have different hierarchies independently. You want to extend both hierarchies by subclassing.
+ - Changes in implementation should have no impact on abstraction.
+ - If you want to hide implementation of abstraction from client.
+ - Best use when you have multiple implementation.
 
 ## Proxy
 According to GoF Proxy design pattern is:
