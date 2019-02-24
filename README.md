@@ -177,6 +177,9 @@ We use inheritance or composition to extend the behavior of an object but this i
  - Decorator design pattern is helpful in providing runtime modification abilities and hence more flexible. Its easy to maintain and extend when the number of choices are more.
  - The disadvantage of decorator design pattern is that it uses a lot of similar kind of objects (decorators).
  - Decorator pattern is used a lot in Java IO classes, such as FileReader, BufferedReader etc.
+ 
+ ## Behavioral patterns 
+Behavioral patterns provide solution for the better interaction between objects and how to provide lose coupling and flexibility to extend easily
 
 ## References
 This guide has taken some examples from: 
