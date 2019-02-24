@@ -21,6 +21,7 @@ Some of the benefits of using design patterns are:
     - [Bridge](#bridge)
     - [Proxy](#proxy)
     - [Decorator](#decorator)
+  - [Behavioral patterns](#Behavioral-patterns) 
 
 
 # Creational Design Patterns
