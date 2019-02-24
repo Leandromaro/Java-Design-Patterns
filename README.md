@@ -182,6 +182,16 @@ We use inheritance or composition to extend the behavior of an object but this i
  ## Behavioral patterns 
 Behavioral patterns provide solution for the better interaction between objects and how to provide lose coupling and flexibility to extend easily
 
+
+## Template Pattern
+Template method defines the steps to execute an algorithm and it can provide default implementation that might be common for all or some of the subclasses.
+
+### Intent
+
+- Define the skeleton of an algorithm in an operation, deferring some steps to subclasses.
+- Template Method lets subclasses redefine certain steps of an algorithm without letting them to change the algorithm's structure.
+
+
 ## References
 This guide has taken some examples from: 
   - [Journaldev](https://www.journaldev.com/1827/java-design-patterns-example-tutorial).
