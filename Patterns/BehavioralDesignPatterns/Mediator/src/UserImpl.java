@@ -1,6 +1,8 @@
 package BehavioralDesignPatterns.Mediator.src;
 
 public class UserImpl extends User {
+
+    // It wires a mediator by dependency injection
     public UserImpl(ChatMediator med, String name) {
         super(med, name);
     }
