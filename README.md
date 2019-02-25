@@ -23,6 +23,8 @@ Some of the benefits of using design patterns are:
     - [Decorator](#decorator)
   - [Behavioral patterns](#Behavioral-patterns) 
     - [Template Method](#template-pattern)
+    - [Mediator](#mediator-pattern)
+    - [Chain of Responsibility](#)
 
 
 # Creational Design Patterns
@@ -192,6 +194,28 @@ Template method defines the steps to execute an algorithm and it can provide def
 - Define the skeleton of an algorithm in an operation, deferring some steps to subclasses.
 - Template Method lets subclasses redefine certain steps of an algorithm without letting them to change the algorithm's structure.
 
+## Mediator Pattern
+According to GoF Proxy design pattern is:
+
+> Allows loose coupling by encapsulating the way disparate sets of objects interact and communicate with each other. Allows for the actions of each object set to vary independently of one another.
+
+Mediator design pattern is very helpful in an enterprise application where multiple objects are interacting with each other. If the objects interact with each other directly, the system components are tightly-coupled with each other that makes higher maintainability cost and not hard to extend. Mediator pattern focuses on provide a mediator between objects for communication and help in implementing lose-coupling between objects.
+
+### Mediator in the Real World 
+An airport control tower is an excellent example of the mediator pattern. The tower looks after who can take off and land - all communications are done from the airplane to control tower, rather than having plane-to-plane communication. This idea of a central controller is one of the key aspects to the mediator pattern.
+
+### Where to use
+The mediator is a good choice of pattern when the communication between objects is complicated, but well defined. When there are too many relationships between the objects in your code, it's time to think of having such a central point of control.
+
+An observer based variation of the mediator pattern is used in Java Message Service (JMS) implementations, which allows applications to subscribe and publish data to other applications. This is a common combination of patterns that makes sense.
+
+## Chain of Responsibility Pattern
+
+Chain of responsibility pattern is used to achieve lose coupling in software design where a request from client is passed to a chain of objects to process them. Then the object in the chain will decide themselves who will be processing the request and whether the request is required to be sent to the next object in the chain or not.
+
+### Example in JDK
+
+We know that we can have multiple catch blocks in a try-catch block code. Here every catch block is kind of a processor to process that particular exception. So when any exception occurs in the try block, it’s sent to the first catch block to process. If the catch block is not able to process it, it forwards the request to next object in chain i.e next catch block. If even the last catch block is not able to process it, the exception is thrown outside of the chain to the calling program.
 
 ## References
 This guide has taken some examples from: 
