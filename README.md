@@ -24,6 +24,7 @@ Some of the benefits of using design patterns are:
   - [Behavioral patterns](#Behavioral-patterns) 
     - [Template Method](#template-pattern)
     - [Mediator](#mediator-pattern)
+    - [Chain of Responsibility](#)
 
 
 # Creational Design Patterns
@@ -207,6 +208,14 @@ An airport control tower is an excellent example of the mediator pattern. The to
 The mediator is a good choice of pattern when the communication between objects is complicated, but well defined. When there are too many relationships between the objects in your code, it's time to think of having such a central point of control.
 
 An observer based variation of the mediator pattern is used in Java Message Service (JMS) implementations, which allows applications to subscribe and publish data to other applications. This is a common combination of patterns that makes sense.
+
+## Chain of Responsibility Pattern
+
+Chain of responsibility pattern is used to achieve lose coupling in software design where a request from client is passed to a chain of objects to process them. Then the object in the chain will decide themselves who will be processing the request and whether the request is required to be sent to the next object in the chain or not.
+
+### Example in JDK
+
+We know that we can have multiple catch blocks in a try-catch block code. Here every catch block is kind of a processor to process that particular exception. So when any exception occurs in the try block, it’s sent to the first catch block to process. If the catch block is not able to process it, it forwards the request to next object in chain i.e next catch block. If even the last catch block is not able to process it, the exception is thrown outside of the chain to the calling program.
 
 ## References
 This guide has taken some examples from: 
