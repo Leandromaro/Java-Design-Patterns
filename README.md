@@ -230,3 +230,4 @@ This guide has taken some examples from:
   - [Journaldev](https://www.journaldev.com/1827/java-design-patterns-example-tutorial).
   - [Dzone](https://dzone.com/articles/design-patterns-the-builder-pattern).
   - [Baeldung](https://www.baeldung.com/java-abstract-factory-pattern).
+  - [oodesign](https://www.oodesign.com).
