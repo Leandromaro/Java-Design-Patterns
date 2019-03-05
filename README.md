@@ -198,7 +198,7 @@ Template method defines the steps to execute an algorithm and it can provide def
 - Template Method lets subclasses redefine certain steps of an algorithm without letting them to change the algorithm's structure.
 
 ## Mediator Pattern
-According to GoF Proxy design pattern is:
+According to GoF Mediator design pattern is:
 
 > Allows loose coupling by encapsulating the way disparate sets of objects interact and communicate with each other. Allows for the actions of each object set to vary independently of one another.
 
@@ -229,7 +229,7 @@ We know that we can have multiple catch blocks in a try-catch block code. Here e
  - Chain of Responsibility design pattern is good to achieve lose coupling but it comes with the trade-off of having a lot of implementation classes and maintenance problems if most of the code is common in all the implementations.
 
 ## Observer
-According to GoF Proxy design pattern is:
+According to GoF Observer design pattern is:
 
 >Define a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically
 
