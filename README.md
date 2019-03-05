@@ -25,6 +25,9 @@ Some of the benefits of using design patterns are:
     - [Template Method](#template-pattern)
     - [Mediator](#mediator-pattern)
     - [Chain of Responsibility](#chain-of-responsibility-pattern)
+    - [Observer](#observer)
+    - [Strategy](#strategy)
+    
 
 
 # Creational Design Patterns
@@ -224,6 +227,19 @@ We know that we can have multiple catch blocks in a try-catch block code. Here e
  - Every object in the chain should have reference to the next object in chain to forward the request to, __its achieved by java composition__.
  - Creating the chain carefully is very important otherwise there might be a case that the request will never be forwarded to a particular processor or there are no objects in the chain who are able to handle the request. 
  - Chain of Responsibility design pattern is good to achieve lose coupling but it comes with the trade-off of having a lot of implementation classes and maintenance problems if most of the code is common in all the implementations.
+
+## Observer
+According to GoF Proxy design pattern is:
+
+>Define a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically
+
+Observer design pattern is useful when you are interested in the state of an object and want to get notified whenever there is any change. In observer pattern, the object that watch on the state of another object are called __Observer__ and the object that is being watched is called __Subject__.
+
+__Subject__ contains a list of observers to notify of any change in it’s state, so it should provide methods using which observers can register and unregister themselves. Subject also contain a method to notify all the observers of any change and either it can send the update while notifying the observer or it can provide another method to get the update.
+
+__Observer__ should have a method to set the object to watch and another method that will be used by Subject to notify them of any updates.
+
+Java provides inbuilt platform for implementing Observer pattern through __java.util.Observable__ class and __java.util.Observer__ interface. However it’s not widely used because the implementation is really simple and most of the times we don’t want to end up extending a class just for implementing Observer pattern as java doesn’t provide multiple inheritance in classes.
 
 ## References
 This guide has taken some examples from: 
