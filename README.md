@@ -241,6 +241,16 @@ __Observer__ should have a method to set the object to watch and another method 
 
 Java provides inbuilt platform for implementing Observer pattern through __java.util.Observable__ class and __java.util.Observer__ interface. However it’s not widely used because the implementation is really simple and most of the times we don’t want to end up extending a class just for implementing Observer pattern as java doesn’t provide multiple inheritance in classes.
 
+## Strategy
+
+Strategy pattern is used when we have multiple algorithm for a specific task and client decides the actual implementation to be used __at runtime__.
+
+Strategy pattern is also known as Policy Pattern. We defines multiple algorithms and __let client application pass the algorithm to be used as a parameter__.
+
+### Intent
+
+Define a family of algorithms, encapsulate each one, and make them interchangeable. Strategy lets the algorithm vary independently from clients that use it
+
 ## References
 This guide has taken some examples from: 
   - [Journaldev](https://www.journaldev.com/1827/java-design-patterns-example-tutorial).
