@@ -27,6 +27,7 @@ Some of the benefits of using design patterns are:
     - [Chain of Responsibility](#chain-of-responsibility-pattern)
     - [Observer](#observer)
     - [Strategy](#strategy)
+    - [Comand](#comand)
     
 
 
@@ -256,6 +257,14 @@ Define a family of algorithms, encapsulate each one, and make them interchangeab
  - We could have used composition to create instance variable for strategies but we should avoid that as we want the specific strategy to be applied for a particular task. Same is followed in Collections.sort() and Arrays.sort() method that take comparator as argument.
  - Strategy Pattern is very similar to State Pattern. One of the difference is that Context contains state as instance variable and there can be multiple tasks whose implementation can be dependent on the state whereas in strategy pattern strategy is passed as argument to the method and context object doesn’t have any variable to store it.
  - Strategy pattern is useful when we have multiple algorithms for specific task and we want our application to be flexible to chose any of the algorithm at runtime for specific task.
+ 
+## Comand
+The Command pattern __is used to create objects that represents actions and events in an application__. A command object encapsulates an action or event and contains all information required to understand exactly what has happened. By passing the command object as a parameter we can, anywhere needed extract information about occurred actions and events.
+
+In command pattern, the request is send to the invoker and invoker pass it to the encapsulated command object.
+Command object passes the request to the appropriate method of Receiver to perform the specific action.
+The client program create the receiver object and then attach it to the Command. Then it creates the invoker object and attach the command object to perform an action.
+Now when client program executes the action, it’s processed based on the command and receiver object.
 
 ## References
 This guide has taken some examples from: 
