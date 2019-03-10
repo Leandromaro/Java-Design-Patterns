@@ -266,6 +266,17 @@ Command object passes the request to the appropriate method of Receiver to perfo
 The client program create the receiver object and then attach it to the Command. Then it creates the invoker object and attach the command object to perform an action.
 Now when client program executes the action, it’s processed based on the command and receiver object.
 
+### Command Pattern Important Points
+
+ - Command is the core of command design pattern that defines the contract for implementation.
+ - Receiver implementation is separate from command implementation.
+ - Command implementation classes chose the method to invoke on receiver object, for every method in receiver there will be a command implementation. It works as a bridge between receiver and action methods.
+ - Invoker class just forward the request from client to the command object.
+ - Client is responsible to instantiate appropriate command and receiver implementation and then associate them together.
+ - Client is also responsible for instantiating invoker object and associating command object with it and execute the action method.
+ - Command design pattern is easily extendible, we can add new action methods in receivers and create new Command implementations without changing the client code.
+ - The drawback with Command design pattern is that the code gets huge and confusing with high number of action methods and because of so many associations.
+
 ## References
 This guide has taken some examples from: 
   - [Journaldev](https://www.journaldev.com/1827/java-design-patterns-example-tutorial).
