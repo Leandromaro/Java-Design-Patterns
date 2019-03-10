@@ -259,6 +259,11 @@ Define a family of algorithms, encapsulate each one, and make them interchangeab
  - Strategy pattern is useful when we have multiple algorithms for specific task and we want our application to be flexible to chose any of the algorithm at runtime for specific task.
  
 ## Comand
+
+According to GoF Comand design pattern is:
+
+>Encapsulate a request as an object, thereby letting you parameterize clients with different requests, queue or log requests, and support undoable operations
+
 The Command pattern __is used to create objects that represents actions and events in an application__. A command object encapsulates an action or event and contains all information required to understand exactly what has happened. By passing the command object as a parameter we can, anywhere needed extract information about occurred actions and events.
 
 Today's pattern is the Command, which allows the requester of a particular action to be decoupled from the object that performs the action. Where the [Chain of Responsibility pattern](#chain-of-responsibility-pattern) forwarded requests along a chain, the Command pattern forwards the request to a specific module.
