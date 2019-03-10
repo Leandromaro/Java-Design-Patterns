@@ -261,7 +261,7 @@ Define a family of algorithms, encapsulate each one, and make them interchangeab
 ## Comand
 The Command pattern __is used to create objects that represents actions and events in an application__. A command object encapsulates an action or event and contains all information required to understand exactly what has happened. By passing the command object as a parameter we can, anywhere needed extract information about occurred actions and events.
 
-Today's pattern is the Command, which allows the requester of a particular action to be decoupled from the object that performs the action. Where the Chain of Responsibility pattern(#chain-of-responsibility-pattern) forwarded requests along a chain, the Command pattern forwards the request to a specific module.
+Today's pattern is the Command, which allows the requester of a particular action to be decoupled from the object that performs the action. Where the [Chain of Responsibility pattern](#chain-of-responsibility-pattern) forwarded requests along a chain, the Command pattern forwards the request to a specific module.
 
 ### Command in the Real World 
 One example of the command pattern being executed in the real world is the idea of a table order at a restaurant: the waiter takes the order, which is a command from the customer.This order is then queued for the kitchen staff.  The waiter tells the chef that the a new order has come in, and the chef has enough information to cook the meal.
