@@ -28,7 +28,7 @@ Some of the benefits of using design patterns are:
     - [Observer](#observer)
     - [Strategy](#strategy)
     - [Comand](#comand)
-    
+    - [State](#state)
 
 
 # Creational Design Patterns
@@ -281,6 +281,23 @@ One example of the command pattern being executed in the real world is the idea 
  - Client is also responsible for instantiating invoker object and associating command object with it and execute the action method.
  - Command design pattern is easily extendible, we can add new action methods in receivers and create new Command implementations without changing the client code.
  - The drawback with Command design pattern is that the code gets huge and confusing with high number of action methods and because of so many associations.
+ 
+## State
+
+
+### Definition
+The State pattern allows an object to alter its behavior when its internal state changes. By using inheritance and letting subclasses represent different states and functionality we can switch during runtime. This is a clean way for an object to partially change its type at runtime.
+
+### Intent
+• Allow an object to alter its behavior when its internal state changes. The object will appear to change its class.
+• An object-oriented state machine
+• wrapper + polymorphic wrappee + collaboration
+
+### Where to use
+•When we need to define a "context" class to present a single interface to the outside world. By defining a State abstract base class.
+•When we want to represent different "states" of a state machine as derived classes of the State base class.
+### Benefits
+•Cleaner code when each state is a class instead. •Use a class to represent a state, not a constant.
 
 ## References
 This guide has taken some examples from: 
