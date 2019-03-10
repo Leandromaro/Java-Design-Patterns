@@ -27,6 +27,7 @@ Some of the benefits of using design patterns are:
     - [Chain of Responsibility](#chain-of-responsibility-pattern)
     - [Observer](#observer)
     - [Strategy](#strategy)
+    - [Comand](#comand)
     
 
 
@@ -250,6 +251,36 @@ Strategy pattern is also known as Policy Pattern. We defines multiple algorithms
 ### Intent
 
 Define a family of algorithms, encapsulate each one, and make them interchangeable. Strategy lets the algorithm vary independently from clients that use it
+
+### Strategy Design Pattern Important Points
+
+ - We could have used composition to create instance variable for strategies but we should avoid that as we want the specific strategy to be applied for a particular task. Same is followed in Collections.sort() and Arrays.sort() method that take comparator as argument.
+ - Strategy Pattern is very similar to State Pattern. One of the difference is that Context contains state as instance variable and there can be multiple tasks whose implementation can be dependent on the state whereas in strategy pattern strategy is passed as argument to the method and context object doesn’t have any variable to store it.
+ - Strategy pattern is useful when we have multiple algorithms for specific task and we want our application to be flexible to chose any of the algorithm at runtime for specific task.
+ 
+## Comand
+
+According to GoF Comand design pattern is:
+
+>Encapsulate a request as an object, thereby letting you parameterize clients with different requests, queue or log requests, and support undoable operations
+
+The Command pattern __is used to create objects that represents actions and events in an application__. A command object encapsulates an action or event and contains all information required to understand exactly what has happened. By passing the command object as a parameter we can, anywhere needed extract information about occurred actions and events.
+
+Today's pattern is the Command, which allows the requester of a particular action to be decoupled from the object that performs the action. Where the [Chain of Responsibility pattern](#chain-of-responsibility-pattern) forwarded requests along a chain, the Command pattern forwards the request to a specific module.
+
+### Command in the Real World 
+One example of the command pattern being executed in the real world is the idea of a table order at a restaurant: the waiter takes the order, which is a command from the customer.This order is then queued for the kitchen staff.  The waiter tells the chef that the a new order has come in, and the chef has enough information to cook the meal.
+
+### Command Pattern Important Points
+
+ - Command is the core of command design pattern that defines the contract for implementation.
+ - Receiver implementation is separate from command implementation.
+ - Command implementation classes chose the method to invoke on receiver object, for every method in receiver there will be a command implementation. It works as a bridge between receiver and action methods.
+ - Invoker class just forward the request from client to the command object.
+ - Client is responsible to instantiate appropriate command and receiver implementation and then associate them together.
+ - Client is also responsible for instantiating invoker object and associating command object with it and execute the action method.
+ - Command design pattern is easily extendible, we can add new action methods in receivers and create new Command implementations without changing the client code.
+ - The drawback with Command design pattern is that the code gets huge and confusing with high number of action methods and because of so many associations.
 
 ## References
 This guide has taken some examples from: 
