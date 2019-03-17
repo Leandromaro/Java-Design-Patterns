@@ -30,6 +30,7 @@ Some of the benefits of using design patterns are:
     - [Comand](#comand)
     - [State](#state)
     - [Visitor](#visitor)
+    - [Interpreter](#interpreter)
 
 
 # Creational Design Patterns
@@ -316,6 +317,15 @@ The benefit of this pattern is that if the logic of operation changes, then we n
 Another benefit is that adding a new item to the system is easy, it will require change only in visitor interface and implementation and existing item classes will not be affected.
 
 An acknowledged __objection__ to the Visitor pattern is that is represents a regression to functional decomposition - separate the algorithms from the data structures. While this is a legitimate interpretation, perhaps a better perspective/rationale is the goal of promoting non-traditional behavior to full object status.
+
+## Interpreter
+
+According to GoF Interpreter design pattern is:
+
+>Given a language, define a representation for its grammar along with an interpreter that uses the representation to interpret sentences in the language.
+
+### When Would I Use This Pattern?
+The Interpreter pattern should be used when you have a simple grammar that can be represented as an Abstract Syntax Tree. This is the more obvious use of the pattern. A more interesting and useful application of Interpreter is when you need a program to produce different types of output, such as a report generator.
 
 ## References
 This guide has taken some examples from: 
