@@ -286,7 +286,7 @@ One example of the command pattern being executed in the real world is the idea 
 ## State
 
 ### Definition
-The State pattern allows an object to alter its behavior when its internal state changes. By using inheritance and letting subclasses represent different states and functionality we can switch during runtime. This is a clean way for an object to partially change its type at runtime.
+The State pattern __allows an object to alter its behavior when its internal state changes__. By using inheritance and letting subclasses represent different states and functionality we can switch during runtime. This is a clean way for an object to partially change its type at runtime.
 
 ### Intent
 • Allow an object to alter its behavior when its internal state changes. The object will appear to change its class.
