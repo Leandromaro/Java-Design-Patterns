@@ -30,6 +30,7 @@ Some of the benefits of using design patterns are:
     - [Comand](#comand)
     - [State](#state)
     - [Visitor](#visitor)
+    - [Interpreter](#interpreter)
 
 
 # Creational Design Patterns
@@ -286,18 +287,18 @@ One example of the command pattern being executed in the real world is the idea 
 ## State
 
 ### Definition
-The State pattern allows an object to alter its behavior when its internal state changes. By using inheritance and letting subclasses represent different states and functionality we can switch during runtime. This is a clean way for an object to partially change its type at runtime.
+The State pattern __allows an object to alter its behavior when its internal state changes__. By using inheritance and letting subclasses represent different states and functionality we can switch during runtime. This is a clean way for an object to partially change its type at runtime.
 
 ### Intent
-• Allow an object to alter its behavior when its internal state changes. The object will appear to change its class.
-• An object-oriented state machine
-• wrapper + polymorphic wrappee + collaboration
+- Allow an object to alter its behavior when its internal state changes. The object will appear to change its class.
+- An object-oriented state machine
+- wrapper + polymorphic wrappee + collaboration
 
 ### Where to use
-•When we need to define a "context" class to present a single interface to the outside world. By defining a State abstract base class.
-•When we want to represent different "states" of a state machine as derived classes of the State base class.
+- When we need to define a "context" class to present a single interface to the outside world. By defining a State abstract base class.
+- When we want to represent different "states" of a state machine as derived classes of the State base class.
 ### Benefits
-•Cleaner code when each state is a class instead. •Use a class to represent a state, not a constant.
+- Cleaner code when each state is a class instead. •Use a class to represent a state, not a constant.
 
 
 ## Visitor
@@ -316,6 +317,15 @@ The benefit of this pattern is that if the logic of operation changes, then we n
 Another benefit is that adding a new item to the system is easy, it will require change only in visitor interface and implementation and existing item classes will not be affected.
 
 An acknowledged __objection__ to the Visitor pattern is that is represents a regression to functional decomposition - separate the algorithms from the data structures. While this is a legitimate interpretation, perhaps a better perspective/rationale is the goal of promoting non-traditional behavior to full object status.
+
+## Interpreter
+
+According to GoF Interpreter design pattern is:
+
+>Given a language, define a representation for its grammar along with an interpreter that uses the representation to interpret sentences in the language.
+
+### When Would I Use This Pattern?
+The Interpreter pattern should be used when you have a simple grammar that can be represented as an Abstract Syntax Tree. This is the more obvious use of the pattern. A more interesting and useful application of Interpreter is when you need a program to produce different types of output, such as a report generator.
 
 ## References
 This guide has taken some examples from: 
