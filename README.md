@@ -32,6 +32,7 @@ Some of the benefits of using design patterns are:
     - [Visitor](#visitor)
     - [Interpreter](#interpreter)
     - [Iterator](#iterator)
+    – [Memento](#memento)
 
 
 # Creational Design Patterns
@@ -336,6 +337,11 @@ An aggregate object such as a list should give you a way to access its elements 
 - The C++ and Java standard library abstraction that makes it possible to decouple collection classes and algorithms.
 - Promote to "full object status" the traversal of a collection.
 - Polymorphic traversal
+
+## Memento
+
+The memento design pattern is used when we want to save the state of an object so that we can restore later on. Memento pattern is used to implement this in such a way that the saved state data of the object is not accessible outside of the object, this protects the integrity of saved state data.
+
 
 ## References
 This guide has taken some examples from: 
