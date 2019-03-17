@@ -328,7 +328,7 @@ According to GoF Interpreter design pattern is:
 ### When Would I Use This Pattern?
 The Interpreter pattern should be used when you have a simple grammar that can be represented as an Abstract Syntax Tree. This is the more obvious use of the pattern. A more interesting and useful application of Interpreter is when you need a program to produce different types of output, such as a report generator.
 
-### Iterator
+## Iterator
 The Iterator pattern is used as the core pattern of Java's Collection Framework. It's used to access the members of collections all the while hiding the underlying implementation.
 An aggregate object such as a list should give you a way to access its elements without exposing its internal structure. Moreover, you might want to traverse the list in different ways, depending on what you need to accomplish.
 
