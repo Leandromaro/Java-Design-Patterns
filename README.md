@@ -342,6 +342,8 @@ An aggregate object such as a list should give you a way to access its elements 
 
 The memento design pattern is used when we want to save the state of an object so that we can restore later on. Memento pattern is used to implement this in such a way that the saved state data of the object is not accessible outside of the object, this protects the integrity of saved state data.
 
+Memento pattern is implemented with two objects – Originator and Caretaker. The originator is the object whose state needs to be saved and restored and it uses an inner class to save the state of Object. The inner class is called Memento and it’s private so that it can’t be accessed from other objects.
+
 
 ## References
 This guide has taken some examples from: 
