@@ -32,6 +32,7 @@ Some of the benefits of using design patterns are:
     - [Visitor](#visitor)
     - [Interpreter](#interpreter)
     - [Iterator](#iterator)
+    - [Memento](#memento)
 
 
 # Creational Design Patterns
@@ -336,6 +337,18 @@ An aggregate object such as a list should give you a way to access its elements 
 - The C++ and Java standard library abstraction that makes it possible to decouple collection classes and algorithms.
 - Promote to "full object status" the traversal of a collection.
 - Polymorphic traversal
+
+## Memento
+
+The memento design pattern is used when we want to save the state of an object so that we can restore later on. Memento pattern is used to implement this in such a way that the saved state data of the object is not accessible outside of the object, this protects the integrity of saved state data.
+
+Memento pattern is implemented with two objects – Originator and Caretaker. The originator is the object whose state needs to be saved and restored and it uses an inner class to save the state of Object. The inner class is called Memento and it’s private so that it can’t be accessed from other objects.
+
+Memento pattern is simple and easy to implement, one of the thing needs to take care is that Memento class should be accessible only to the Originator object. Also in client application, we should use caretaker object for saving and restoring the originator state.
+
+Also if Originator object has properties that are not immutable, we should use deep copy or cloning to avoid data integrity issue like I have used in above example. We can use Serialization to achieve memento pattern implementation that is more generic rather than Memento pattern where every object needs to have it’s own Memento class implementation.
+
+One of the drawback is that if Originator object is very huge then Memento object size will also be huge and use a lot of memory.
 
 ## References
 This guide has taken some examples from: 
