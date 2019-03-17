@@ -289,15 +289,15 @@ One example of the command pattern being executed in the real world is the idea 
 The State pattern __allows an object to alter its behavior when its internal state changes__. By using inheritance and letting subclasses represent different states and functionality we can switch during runtime. This is a clean way for an object to partially change its type at runtime.
 
 ### Intent
-• Allow an object to alter its behavior when its internal state changes. The object will appear to change its class.
-• An object-oriented state machine
-• wrapper + polymorphic wrappee + collaboration
+- Allow an object to alter its behavior when its internal state changes. The object will appear to change its class.
+- An object-oriented state machine
+- wrapper + polymorphic wrappee + collaboration
 
 ### Where to use
-•When we need to define a "context" class to present a single interface to the outside world. By defining a State abstract base class.
-•When we want to represent different "states" of a state machine as derived classes of the State base class.
+- When we need to define a "context" class to present a single interface to the outside world. By defining a State abstract base class.
+- When we want to represent different "states" of a state machine as derived classes of the State base class.
 ### Benefits
-•Cleaner code when each state is a class instead. •Use a class to represent a state, not a constant.
+- Cleaner code when each state is a class instead. •Use a class to represent a state, not a constant.
 
 
 ## Visitor
