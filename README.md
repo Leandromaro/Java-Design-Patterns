@@ -32,7 +32,7 @@ Some of the benefits of using design patterns are:
     - [Visitor](#visitor)
     - [Interpreter](#interpreter)
     - [Iterator](#iterator)
-    – [Memento](#memento)
+    - [Memento](#memento)
 
 
 # Creational Design Patterns
