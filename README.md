@@ -29,6 +29,7 @@ Some of the benefits of using design patterns are:
     - [Strategy](#strategy)
     - [Comand](#comand)
     - [State](#state)
+    - [Visitor](#visitor)
 
 
 # Creational Design Patterns
@@ -284,7 +285,6 @@ One example of the command pattern being executed in the real world is the idea 
  
 ## State
 
-
 ### Definition
 The State pattern allows an object to alter its behavior when its internal state changes. By using inheritance and letting subclasses represent different states and functionality we can switch during runtime. This is a clean way for an object to partially change its type at runtime.
 
@@ -298,6 +298,22 @@ The State pattern allows an object to alter its behavior when its internal state
 •When we want to represent different "states" of a state machine as derived classes of the State base class.
 ### Benefits
 •Cleaner code when each state is a class instead. •Use a class to represent a state, not a constant.
+
+
+## Visitor
+
+Visitor's primary purpose is to abstract functionality that can be applied to an aggregate hierarchy of "element" objects. The approach encourages designing lightweight Element classes __- because processing functionality is removed from their list of responsibilities__. New functionality can easily be added to the original inheritance hierarchy by creating a new Visitor subclass.
+
+Visitor implements "double dispatch". OO messages routinely manifest "single dispatch" - the operation that is executed depends on: the name of the request, and the type of the receiver. In "double dispatch", the operation executed depends on: the name of the request, and the type of TWO receivers (the type of the Visitor and the type of the element it visits).
+
+Add a single pure virtual accept method to the base class of the Element hierarchy. accept is defined to receive a single argument - a pointer or reference to the abstract base class of the Visitor hierarchy.
+Each concrete derived class of the Element hierarchy implements the accept method by simply calling the visit method on the concrete derived instance of the Visitor hierarchy that it was passed, passing its "this" pointer as the sole argument.
+
+### Visitor Pattern Benefits
+
+The benefit of this pattern is that if the logic of operation changes, then we need to make change only in the visitor implementation rather than doing it in all the item classes.
+
+Another benefit is that adding a new item to the system is easy, it will require change only in visitor interface and implementation and existing item classes will not be affected.
 
 ## References
 This guide has taken some examples from: 
