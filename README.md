@@ -169,6 +169,8 @@ The implementation of bridge design pattern follows the notion to prefer Composi
  - Changes in implementation should have no impact on abstraction.
  - If you want to hide implementation of abstraction from client.
  - Best use when you have multiple implementation.
+ 
+ >> At first sight, the Bridge pattern looks a lot like the Adapter pattern in that a class is used to convert one kind of interface to another. However, the intent of the Adapter pattern is to make one or more classes' interfaces look the same as that of a particular class. The Bridge pattern is designed to separate a class's interface from its implementation so you can vary or replace the implementation without changing the client code.
 
 ## Proxy
 According to GoF Proxy design pattern is:
